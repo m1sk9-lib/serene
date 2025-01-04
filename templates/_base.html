@@ -16,6 +16,9 @@
   <link rel="stylesheet" href="/main.css">
   {% block head %}{% endblock head %}
   {% include "_head_extend.html" %}
+
+  <!-- 2025/01/04: Added Mastodon meta tags for fediverse compatibility -->
+  <meta name="fediverse:creator" content="@m1sk9@mstdn.maud.io">
 </head>
 
 <body class="{% block page %}{% endblock page%}{% if config.extra.force_theme == "dark" %}dark{% endif %}">
